@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nttr.multitext_test.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="70dp"
+        android:descendantFocusability="blocksDescendants"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/txt" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAddText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="153dp"
+        android:text="@string/btn_AddText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="@string/btn_Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnAddText"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+</android.support.constraint.ConstraintLayout>
